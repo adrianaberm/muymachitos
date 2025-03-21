@@ -29,7 +29,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/unity/Build"
+              "src/unity/Build",
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.scss",
