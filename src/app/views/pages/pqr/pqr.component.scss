@@ -1,0 +1,228 @@
+.contentitle {
+  margin: auto;
+  text-align: center;
+  display: grid;
+  margin: 3rem 0px 3rem;
+  .text1 {
+    font-size: 7rem;
+    margin: 0;
+    height: 6rem;
+    font-family: "theboldfont"
+  }
+  .text2 {
+    font-size: 7rem;
+    margin: 0;
+    font-family: "theboldfont"
+  }
+}
+
+.contentpqr {
+  height: 3rem;
+  padding: 30px 70px 50px 70px;
+  height: auto;
+  margin-bottom: 30px;
+  font-family: "theboldfont"
+}
+
+.formpqr {
+  background-color: #418f42;
+  border-radius: 30px;
+  padding: 30px;
+  label {
+    font-size: 25px;
+    //width: 7rem;
+    color: white;
+  }
+  textarea {
+    width: 99%;
+    border-radius: 20px;
+    height: 12rem !important;
+    width: -webkit-fill-available !important;
+    padding-top: 16px;
+    display: block;
+    padding-left: 10px;
+    outline-color: rgba(51, 136, 51, 0.829);
+    font-size: 14pt;
+    font-family: "simplyRounded";
+    margin-top: 10px;
+  }
+
+  textarea:focus-visible {
+    outline-color: rgba(51, 136, 51, 0.829);
+  }
+  .contentlabelinput {
+    display: flex;
+    margin: 16px 0px;
+
+    label {
+      font-size: 25px;
+      //width: 7rem;
+      color: white;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 15px;
+      margin-left: 10px;
+      padding: 5px 5px 5px 10px;
+      font-size: 12pt;
+      font-family: "simplyRounded";
+    }
+    input:focus-visible {
+      outline-color: rgba(51, 136, 51, 0.829);
+    }
+  }
+
+  .contentButton {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .contentitle {
+    text-align: center;
+    display: grid;
+    margin: 5rem 0px 4rem;
+    .text1 {
+      font-size: 40px;
+      margin: 0;
+      height: auto;
+    }
+    .text2 {
+      font-size: 3rem;
+      margin: 0;
+    }
+  }
+
+  .contentpqr {
+    padding: 10px 30px 10px 30px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .formpqr {
+    background-color: #418f42;
+    border-radius: 30px;
+    padding: 30px;
+    label {
+      font-size: 25px;
+      //width: 7rem;
+      color: white;
+    }
+    textarea {
+      width: 99%;
+      border-radius: 20px;
+      height: 12rem !important;
+      width: -webkit-fill-available !important;
+      padding-top: 16px;
+      display: block;
+      padding-left: 10px;
+      outline-color: rgba(51, 136, 51, 0.829);
+      font-size: 14pt;
+      font-family: "simplyRounded";
+      margin-top: 10px;
+    }
+
+    textarea:focus-visible {
+      outline-color: rgba(51, 136, 51, 0.829);
+    }
+    .contentlabelinput {
+        display: flex;
+        margin: 16px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+
+      label {
+        font-size: 25px;
+        width: 7rem;
+        color: white;
+      }
+
+      input {
+        width: 100%;
+        border-radius: 15px;
+        padding: 5px 5px 5px 10px;
+        font-size: 12pt;
+        margin-left: 0px;
+        font-family: "simplyRounded";
+      }
+      input:focus-visible {
+        outline-color: rgba(51, 136, 51, 0.829);
+      }
+    }
+  }
+  .contentButton {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 790px) and (min-width: 481px) {
+    .contentitle {
+        margin: auto;
+        text-align: center;
+        display: grid;
+        margin: 3rem 0px 3rem;
+        .text1 {
+          font-size: 6rem;
+          margin: 0;
+          height: 6rem;
+        }
+        .text2 {
+          font-size: 6rem;
+          margin: 0;
+        }
+      }
+}
+@media screen and (max-width: 1030px) and (min-width: 791px) {
+}
+
+.dropdown-menu{
+  transform: translate(-13rem, 30px) !important;
+  overflow: scroll;
+  min-height: 72px;
+  max-height: 150px;
+}
+
+.content-dropdown {
+  box-sizing: border-box;
+  height: 30px;
+  width: initial;
+  //opacity: 0.4;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  height: 30px;
+  color: black;
+  font-family: "OnAirRegular";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 17px;
+  border: 1px solid #019df4;
+  border-radius: 10px 0px 0px 10px;
+  padding-left: 10px;
+  width: -webkit-fill-available;
+}
+
+.arrow-button {
+  border: 2px solid #019df4;
+  background: #019df4;
+  border-radius: 0px 8px 8px 0px;
+  width: 2rem;
+  height: 100%;
+  &::after {
+      content: none;
+  }
+}
+.selectItems{
+  display: flex;
+  padding: 0 !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: scroll;
+}
+

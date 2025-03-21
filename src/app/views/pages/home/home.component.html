@@ -1,0 +1,84 @@
+<app-header styleclass="wrapper" ></app-header>
+<div class="contentgame">
+    <h2 class="t1" data-aos="fade-down" data-aos-duration="1500">¿ERES MACHISTA?</h2>
+    <h2 class="t2" data-aos="fade-down" data-aos-duration="1500">Averígualo jugando</h2>
+    <app-button clasStyle="buttongame" text="JUGAR" onclick="location.href='/machistometro'" data-aos="fade-up" data-aos-duration="3000"></app-button>
+</div>
+<button class="redirecTema">
+    <a href="/home#temadelasemana">
+    <p class="p1">¡OPINA, CRITICA O PREGUNTA!</p>
+    <p class="p2">Tema de la semana: Uniformes inapropiados</p>
+    </a>
+</button>
+<div class="contentpost" data-aos="flip-up" data-aos-duration="1000">
+    <div class="text">
+        <span>¡Disfruta de todos nuestros capítulos!</span>
+    </div>
+    <div class="logo">
+        <div class="logos">
+            <a href="https://open.spotify.com/episode/16mcib2YH8PwGhQpbkP6WQ?si=r9sniOdeSM-t2z6gnAWgkg&utm_source=copy-link" ><img class="spotify" src="assets/iconsspotify.svg" alt="" ></a>
+            <a href="https://www.youtube.com/watch?v=_9AAKeQurVc"> <img class="youtube" src="assets/iconsyoutube.svg" alt=""></a>
+        </div>
+        <div class="textAcceso">
+            <a href="/podcast">Puedes escucharlos o verlos</a>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div>
+        <iframe class="contentvideo" src="https://www.youtube.com/embed/_9AAKeQurVc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div class="contentpara">
+        <label>UNIFORMES <br>INAPROPIADOS</label>
+        <p align="right" class="text">Invitado: Camilo Romero.
+        </p>
+        <a align="right" class="suscriber" href="https://www.youtube.com/watch?v=_9AAKeQurVc">¡Suscríbete!</a>
+    </div>
+</div>
+
+<section id="temadelasemana">
+<h1 class="temadelasemana" data-aos="zoom-in-up" data-aos-duration="1500">¡TEMA DE LA SEMANA!</h1>
+
+<p class="twotemadelasemana" data-aos="zoom-in-right" data-aos-duration="1500">
+    El nuevo uniforme del restaurante Hooters ahora es más corto que el anterior ¿Es esto machista?
+</p>
+
+<div class="contenttwo">
+    <div class="contentgrafica">
+        <div class="grafica">
+            <ngx-charts-bar-vertical 
+            [view]="view"
+            [results]="valueGraph" 
+            [gradient]="gradient" 
+            [xAxis]="showXAxis"
+            [yAxis]="showYAxis" 
+            [legend]="showLegend" 
+            [showXAxisLabel]="showXAxisLabel"
+            [showYAxisLabel]="showYAxisLabel" 
+            [xAxisLabel]="xAxisLabel" 
+            [yAxisLabel]="yAxisLabel">
+            
+            </ngx-charts-bar-vertical>
+        </div>
+        <div class="buttongrafica">
+            <app-button (clicker)="yes()" clasStyle="buttonsYes" text="Sí"></app-button>
+            <app-button (clicker)="no()" clasStyle="buttonsNo" text="No"></app-button>
+        </div>
+
+    </div>
+    <div class="contentquestion" data-aos="fade-down" data-aos-duration="1500">
+        <div class="question" [formGroup]="valueQuestion" (ngSubmit)="clicksubmit()">
+            <h2 class="titlequestion">Ese no es el punto, el punto es...</h2>
+            <textarea formControlName="text" name="" id="textarea" placeholder="Escribe aquí tu respuesta"></textarea>
+        </div>
+        <app-button (clicker)="clicksubmit()" clasStyle="buttonsudmin" text="Enviar"></app-button>
+    </div>
+</div>
+</section>
+<app-footer></app-footer>
+
+

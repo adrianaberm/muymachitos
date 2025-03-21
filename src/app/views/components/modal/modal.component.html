@@ -1,0 +1,33 @@
+<div class="modal-alert" (click)="close()">
+    <ng-container #containerModal>
+        <ng-template #success >
+        <div class="modal-body" >
+            <div class="modal-view">
+                <label>¡ESCÚCHALO EN TU <br> PLATAFORMA FAVORITA!</label>
+                <div class="logos">
+                    <a [href]="spotifyLink" target="_blank" >
+                        <img class= "spotify" src="assets/spotify_large.svg" />
+                    </a>
+                    <a [href]="deezerLink" target="_blank">
+                        <img class= "deezer" src="assets/deezer_large.svg" />
+                    </a>
+                    <a [href]="amazonLink" target="_blank">
+                        <img class= "amazon" src="assets/amazon_large.svg" />
+                    </a>
+                    <a [href]="itunesLink" target="_blank">
+                        <img class= "itunes" src="assets/itunes_large.svg" />
+                    </a>
+                </div>
+            </div>
+            <div class="modal-listen">
+                <label>¡MÍRALO AQUÍ!</label>
+                <div class="youtube">
+                    <a [href]="youtubeLink" target="_blank">
+                        <img src="assets/iconsyoutube.svg" />
+                    </a>
+                </div>
+            </div>    
+        </div>
+    </ng-template>
+    </ng-container>
+</div>

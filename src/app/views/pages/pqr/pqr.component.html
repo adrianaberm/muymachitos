@@ -1,0 +1,32 @@
+<app-header styleclass="pqr"></app-header>
+
+<div class="contentitle">
+    <span class="text1">¡Opina · Critica</span>
+    <span class="text2">Pregunta!</span>
+</div>
+
+<div class="contentpqr">
+    <div class="formpqr">
+        <form [formGroup]="formPqr" >
+            <div class="contentlabelinput">
+                <label>Nombre:</label>
+                <input formControlName="name" type="text">
+            </div>
+            <div class="contentlabelinput">
+                <label >Edad:</label>
+                <input formControlName="age" type="number">
+            </div>
+            <div class="contentlabelinput">
+                <label>Ciudad:</label>
+                <input formControlName="town" type="text">
+            </div>                   
+            <label>OPINIÓN · CRÍTICA · PROPUESTA · PREGUNTA:</label>
+            <textarea formControlName="pqr"></textarea>
+        </form>
+        <div class="contentButton">
+            <app-button (clicker)="clicksubmit()" clasStyle="buttonsudmin" text="Enviar"></app-button>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: "theboldfont";
+    width: 100%;
+}
+
+.modal-content {
+    border-radius: 12rem !important;
+   width: max-content !important;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.modal-body {
+    width: max-content !important;
+    padding: unset !important;
+}
+
+.modal-alert {
+   // width: max-content !important;
+}
+
+.modal-dialog {
+    justify-content: center; 
+}
+
+
+@font-face {
+    font-family: "theboldfont";
+    src: local("theboldfont"), url(./assets/fonts/theboldfont.ttf);
+}
+
+@font-face {
+    font-family: "simplyRounded";
+    src: local("simplyRounded"), url(./assets/fonts/SimplyRounded.ttf);
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

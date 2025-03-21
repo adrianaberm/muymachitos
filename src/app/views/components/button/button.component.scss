@@ -1,0 +1,114 @@
+.buttongame {
+  background-color: #c13827;
+  border-radius: 100px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "theboldfont";
+  font-size: 46px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.buttongame:hover {
+  background-color: #418f42;
+}
+
+.buttonsudmin {
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  border: none;
+  color: rgb(22, 22, 22);
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "theboldfont";
+  font-size: 26px;
+  padding: 5px 13px;
+}
+
+.buttonsudmin:hover {
+  background-color: #c13827;
+  color: #fff;
+}
+
+.buttonsYes {
+  background-color: #418f42;
+  border-radius: 100px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "theboldfont";
+  font-size: 26px;
+  padding: 5px 36px;
+  margin-right: 10px;
+}
+
+.buttonsYes:hover {
+  background-color: #c13827;
+  color: #fff;
+}
+
+.buttonsNo {
+  background-color: #418f42;
+  border-radius: 100px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "theboldfont";
+  font-size: 26px;
+  padding: 5px 30px;
+  margin-left: 10px;
+}
+
+.buttonsNo:hover {
+  background-color: #c13827;
+  color: #fff;
+}
+
+.buttonlibro {
+  background-color: #167ac6;
+  border-radius: 100px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "theboldfont";
+  font-size: 38px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.buttonlibro:hover {
+  background-color: #c13827;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .buttongame {
+    font-size: 32px;
+  }
+  .buttonsudmin {
+    font-size: 22px;
+  }
+  .buttonsYes {
+    font-size: 20px;
+  }
+
+  .buttonsNo {
+    font-size: 20px;
+  }
+  .buttonlibro {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 790px) and (min-width: 481px) {
+  .buttongame {
+    font-size: 41px;
+  }
+  .buttonlibro {
+    font-size: 38px;
+  }
+}
